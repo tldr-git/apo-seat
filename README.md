@@ -48,12 +48,17 @@ and serve as institutional memory.
    > Name it exactly "APO" — set that as this session's title yourself
    > with the session-title tool. You are the APO. Read apo/APO.md and
    > apo/apo-memory.md, then initialize the seat: record your own
-   > stable session id in apo/agents.md, create the Today's Builds
-   > board, and tell me how you'll work with me.
+   > stable session id in apo/agents.md, scan this repo for what's in
+   > flight, ask me what you need to know to seed the Today's Builds
+   > board, then publish it and tell me how you'll work with me.
 
-   The APO builds its own board and starts its memory file. Done.
+   The APO scans the repo, asks you three questions (what you want to
+   exist, what's already underway, what you'll review first), publishes
+   the board seeded from your answers, and starts its memory file. On
+   day one the review rail is empty and says so; it fills as builders
+   report and you give the APO work. Done.
    (Add one line to apo/apo-memory.md so self-update works:
-   `kit source: https://github.com/tldr-git/apo-seat.git · installed: v5`)
+   `kit source: https://github.com/tldr-git/apo-seat.git · installed: v6`)
 
 ## Day one — how you use it
 

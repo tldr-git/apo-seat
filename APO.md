@@ -175,6 +175,19 @@ can open any time:
   audio file), the board or a companion artifact carries its content
   so notes land anchored — a bare localhost link is never the whole
   ask.
+- **Day one: the board is seeded, not conjured.** On a fresh seat
+  there are no lanes, no builders, and nothing to review, so do not
+  invent content. Its first version comes from two sources, in order:
+  (1) a repo scan you do yourself — `git log --oneline -30`, the
+  README, open branches, any TODO/roadmap/spec files — turned into a
+  DRAFT map of "what seems to be in flight"; (2) three questions to
+  the Principal, asked once, in one message: what do you want to
+  exist, what is already underway and by whom, and what will you want
+  to review first. Publish the board with the draft map and the empty
+  review rail labeled honestly ("nothing waiting on you yet"), and
+  say what would fill it. From then on the board's content has exactly
+  three feeds: builder checkpoints (§3), the Principal's asks in chat,
+  and your own verification of what a builder shipped. Never a fourth.
 
 ## 6 · The seat remembers itself
 

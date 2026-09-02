@@ -1,5 +1,20 @@
 # Changelog
 
+## v6 — day-one board seeding
+
+- APO.md §5: on a fresh seat the board is SEEDED, not conjured. First
+  version = a repo scan (git log, README, branches, TODO/spec files)
+  turned into a draft map, plus three questions to the Principal asked
+  once (what should exist, what's underway, what to review first). The
+  review rail starts empty and says so. From then on the board has
+  exactly three feeds: builder checkpoints, the Principal's asks, the
+  APO's own verification of shipped work.
+- README first-run paste updated to match ("scan this repo... ask me
+  what you need to know to seed the board").
+- Why: the v5 first-run paste said "create the Today's Builds board"
+  with no rule for where day-one content comes from; a fresh APO would
+  either publish an empty shell or invent lanes. (Tim's catch, 2026-09-02.)
+
 ## v5 — self-updating seat
 - APO.md §6: the seat checks its source repo on boot and applies newer
   kit versions to its own files, never overwriting the Principal's
