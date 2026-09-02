@@ -81,14 +81,40 @@ should never have to figure out the mechanics:
   this shape (the leading attribution tells the new agent who its
   coordinator is; the name is its cross-session address):
 
-  `APO: "This new chat should be named exactly '<BUILDER - Name>'.
-  You are <role>. Read <charter file>. <first task>."`
+  `APO: "Name it exactly '<BUILDER - Name>' — set that as this
+  session's title yourself with the session-title tool, don't rely on
+  auto-naming. You are <role>. Read <charter file>. First: look up
+  your own stable session id and message it to the APO at <APO
+  stable id> with one line on your task. Then: <first task>."`
 
-- **Messaging between agents:** agents on one machine can message each
-  other (ListAgents to discover, SendMessage by exact name). Verify
-  it works before relying on it: have the new builder message you
-  ("confirm you can reach the APO"). Never send to an UNNAMED session
-  on a guess — hand the Principal a paste block instead.
+  Two lessons baked into that wording: auto-titling will rename the
+  chat from its first message unless the agent SETS its title
+  explicitly (a tool call, not a hope), and "name it exactly" lands
+  more reliably than "should be named." If a chat still comes up
+  mis-titled, the APO can rename it from outside by its stable id.
+
+- **Messaging between agents — two layers, use both:**
+  1. *Stable address.* Every chat has a permanent session id (from the
+     session-management tools: `get_session self` reveals yours;
+     `list_sessions` finds others by title). `send_message` to that id
+     delivers even when the target chat is closed — it arrives as a
+     labeled turn when it next opens. THIS is the address you write
+     into files. Renaming a chat never breaks it: titles are labels,
+     the id is the address.
+  2. *Live fast path.* Agents currently open on the machine appear in
+     ListAgents under a peer name and can be reached with SendMessage
+     by that exact name. But interactive peer names are process-scoped
+     (a project slug + two hex characters) and change on restart, and a
+     chat's UI title does NOT propagate to its peer name — so never
+     write a peer name into a file as if it were stable.
+  **Registry protocol (the APO owns it):** keep `apo/agents.md` — one
+  row per active chat: role/title, stable session id, what it's
+  working on, last seen. Each builder's kickoff (below) has it report
+  its stable id to you as its first act; you file the row. Any agent
+  that needs a colleague reads the registry, messages the stable id,
+  and falls back to the handoff queue file if the target never boots.
+  Verify the channel on every launch: the builder's first message to
+  you IS the test.
 - **Coordinator routing:** every charter carries a standing line —
   questions, blockers, and checkpoints go to the APO session (by
   name), NEVER to the Principal. If a builder needs something only

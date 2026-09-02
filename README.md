@@ -36,9 +36,11 @@ explain WHY and serve as institutional memory.
 
 3. **First run.** Open a terminal in the repo, run `claude`, paste:
 
-   > You are the APO. Read apo/APO.md and apo/apo-memory.md, then
-   > initialize the seat: name this chat "APO", create the Today's
-   > Builds board, and tell me how you'll work with me.
+   > Name it exactly "APO" — set that as this session's title yourself
+   > with the session-title tool. You are the APO. Read apo/APO.md and
+   > apo/apo-memory.md, then initialize the seat: record your own
+   > stable session id in apo/agents.md, create the Today's Builds
+   > board, and tell me how you'll work with me.
 
    The APO builds its own board and starts its memory file. Done.
 
