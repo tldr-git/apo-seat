@@ -68,6 +68,41 @@ into `CLAUDE.md` first. No guessing from git history.
    prints: `kit source: https://github.com/tldr-git/apo-seat.git ·
    installed: <that tag>`)
 
+## Which model runs which seat (this is where the efficiency comes from)
+
+Set the model BEFORE you paste a kickoff (the model picker in the app,
+or `/model` in a terminal session). Recommended:
+
+- **APO: the newest, strongest model, at high effort** (as of this
+  writing, Claude Fable 5.1, high).
+- **Builders: a solid, fast model, at high effort** (as of this
+  writing, Claude Opus 4.8, high).
+
+Why the split, since it is the whole point of the setup:
+
+- The APO is the judgment seat. It reads everything once, decides
+  what is worth your attention, verifies builders' claims against
+  the actual artifact, and harvests your feedback into rules. Every
+  mistake there costs YOUR time, the scarcest input in the system.
+  There is exactly one of it, so its per-token cost barely matters
+  and its quality matters completely.
+- Builders do bounded, well-specified work at volume: the APO has
+  already turned the ambiguity into a charter, so they need
+  reliability and speed on a clear task, not the best judgment
+  available. There are many of them and they run for hours. Their
+  per-token cost is where the money goes, and a solid model at high
+  effort is very good at a well-specified task.
+- Put the strongest model everywhere and you pay top rate for
+  hours of routine building. Put a cheaper model on the APO and its
+  misses reach you as bad review asks and unverified "done"s, which
+  you then catch yourself. Strong judgment once, solid hands many
+  times is the arrangement that makes one person able to run
+  several builders.
+
+Names go stale; the rule does not: the newest, strongest model on
+the APO, a solid fast one on builders, both at high effort. Revisit
+when a new generation ships.
+
 ## The one-paste install (an agent does every step above)
 
 If you'd rather not do the setup by hand: open a terminal in your repo,

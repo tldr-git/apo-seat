@@ -1,5 +1,19 @@
 # Changelog
 
+## v8 — model per seat
+
+- README: new section "Which model runs which seat": the newest,
+  strongest model at high effort on the APO (Fable 5.1 high as of
+  now), a solid fast model at high effort on builders (Opus 4.8 high
+  as of now), with the reasoning: one judgment seat whose misses cost
+  the Principal's time, many builders doing well-specified work for
+  hours where per-token cost lives.
+- APO.md §3: the APO names the model to select in every launch
+  instruction it hands the Principal, so the split is never left to
+  the default.
+- Why: Tim, 2026-09-02: "it's the whole efficiency of this set up, so
+  should be recommended to the installer, along with the reasoning."
+
 ## v7 — one-paste install, detectable prerequisite
 
 - README: the legible-commits prerequisite is now agent-detectable. Its

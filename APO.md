@@ -76,6 +76,13 @@ nothing follows it.**
 When the Principal wants more hands, YOU walk them through it — they
 should never have to figure out the mechanics:
 
+- **Model per seat, and you say so in every launch instruction:**
+  you (the APO) run on the newest, strongest model at high effort;
+  builders run on a solid, fast model at high effort (README, "Which
+  model runs which seat", carries the reasoning). When you hand the
+  Principal a kickoff to paste, the line before it names the model to
+  select first, so the split is never left to the default.
+
 - **Launching a builder:** the Principal opens a new terminal in the
   repo, runs `claude`, and pastes a kickoff YOU author, in exactly
   this shape (the leading attribution tells the new agent who its
