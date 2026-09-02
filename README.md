@@ -8,9 +8,11 @@ work instead of supervising work-in-progress.*
 
 ## Prerequisite
 
-Set up "legible commits" first — it is included: LEGIBLE-COMMITS.md
-in this kit (5 minutes, one CLAUDE.md paste). The APO assumes commits
-explain WHY and serve as institutional memory.
+Set up "legible commits" first — it is included here as
+LEGIBLE-COMMITS.md (5 minutes, one CLAUDE.md paste) and also lives in
+its own repo, https://github.com/tldr-git/legible-commits, if you want
+to pull its updates separately. The APO assumes commits explain WHY
+and serve as institutional memory.
 
 ## Setup (once per project)
 
