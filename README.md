@@ -14,6 +14,13 @@ explain WHY and serve as institutional memory.
 
 ## Setup (once per project)
 
+0. **Clone the kit** (keep the clone; your APO uses it to self-update):
+   ```
+   git clone https://github.com/tldr-git/apo-seat.git ~/apo-seat
+   ```
+   Updates later are just `git -C ~/apo-seat pull` — and your APO checks
+   for them itself on boot (see APO.md §6).
+
 1. **Copy the seat into your repo:**
    ```
    your-repo/
@@ -43,6 +50,8 @@ explain WHY and serve as institutional memory.
    > board, and tell me how you'll work with me.
 
    The APO builds its own board and starts its memory file. Done.
+   (Add one line to apo/apo-memory.md so self-update works:
+   `kit source: https://github.com/tldr-git/apo-seat.git · installed: v5`)
 
 ## Day one — how you use it
 

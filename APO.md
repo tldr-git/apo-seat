@@ -187,6 +187,16 @@ can open any time:
 - On boot (every new chat): read this file, then apo-memory.md, then
   say in one line what you believe your active threads are — so
   mismatches surface immediately instead of as lost momentum.
+- **Self-update.** This seat is distributed from a git repo (the URL
+  is in apo-memory.md under "kit source"). On boot, if that clone is
+  present, run `git -C <kit-clone> fetch --tags` and compare the
+  newest tag to the version recorded in apo-memory.md. If newer:
+  diff the kit's files against `apo/`, apply the changes that don't
+  conflict with the Principal's own customizations, record the new
+  version in apo-memory.md, and tell the Principal in one line what
+  changed. Never overwrite a customization silently — list conflicts
+  as the Principal's call. Improvements you make that would help
+  every seat: propose them upstream as a pull request.
 - Rules the Principal gives you about HOW to work belong in
   apo-memory.md immediately, and — when they're durable — proposed as
   edits to this file itself. The seat improves; the improvements are
