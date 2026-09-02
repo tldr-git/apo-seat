@@ -50,7 +50,3 @@ paths on the commit itself bypasses the shared staging area entirely.
 
 That's the whole prerequisite. The APO enforces these on every builder
 it launches.
-
-*(Tim's original, personal-flavored version lives at
-https://wknd.sh/settings — this copy adds the two multi-agent lessons:
-the provenance pointer and pathspec commits.)*
