@@ -14,6 +14,12 @@ its own repo, https://github.com/tldr-git/legible-commits, if you want
 to pull its updates separately. The APO assumes commits explain WHY
 and serve as institutional memory.
 
+**How an agent knows whether it's already installed:** the paste
+leaves a heading in the repo's `CLAUDE.md`, exactly
+`## Commits & comments are institutional memory`. If that heading is
+present, skip this step; if absent, paste LEGIBLE-COMMITS.md's block
+into `CLAUDE.md` first. No guessing from git history.
+
 ## Setup (once per project)
 
 0. **Clone the kit** (keep the clone; your APO uses it to self-update):
@@ -57,8 +63,30 @@ and serve as institutional memory.
    the board seeded from your answers, and starts its memory file. On
    day one the review rail is empty and says so; it fills as builders
    report and you give the APO work. Done.
-   (Add one line to apo/apo-memory.md so self-update works:
-   `kit source: https://github.com/tldr-git/apo-seat.git · installed: v6`)
+   (Add one line to apo/apo-memory.md so self-update works, filling in
+   the newest tag of the clone, which `git -C ~/apo-seat describe --tags`
+   prints: `kit source: https://github.com/tldr-git/apo-seat.git ·
+   installed: <that tag>`)
+
+## The one-paste install (an agent does every step above)
+
+If you'd rather not do the setup by hand: open a terminal in your repo,
+run `claude`, and paste this. The agent clones the kit, installs
+legible commits only if the heading above is missing, copies the seat
+in, adds the CLAUDE.md block, and does the first run.
+
+> Name this chat exactly "APO" and set that as this session's title
+> yourself with the session-title tool. Then install the APO seat from
+> https://github.com/tldr-git/apo-seat.git: clone it to ~/apo-seat and
+> follow its README.md setup steps in this repo, including the
+> prerequisite check (install legible commits from the kit's
+> LEGIBLE-COMMITS.md only if this repo's CLAUDE.md lacks the heading the
+> README names) and the memory line with the clone's newest tag. Then
+> do the first run exactly as the README says: read apo/APO.md and
+> apo/apo-memory.md, record your own stable session id in apo/agents.md,
+> scan this repo for what's in flight, ask me what you need to know to
+> seed the Today's Builds board, publish it, and tell me in a few lines
+> how you'll work with me.
 
 ## Day one — how you use it
 

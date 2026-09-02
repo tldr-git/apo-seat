@@ -1,5 +1,20 @@
 # Changelog
 
+## v7 — one-paste install, detectable prerequisite
+
+- README: the legible-commits prerequisite is now agent-detectable. Its
+  paste leaves the heading `## Commits & comments are institutional
+  memory` in CLAUDE.md; present = skip, absent = install from
+  LEGIBLE-COMMITS.md first. No guessing from git history.
+- README: the memory line no longer hard-codes a version; the agent
+  fills in the clone's newest tag (`git describe --tags`), so the same
+  paste works for every future version.
+- README: a "one-paste install" section with the exact block a person
+  pastes into `claude` in their repo; the agent does every setup step.
+- Why: Tim, giving the kit to a second friend, edited the paste line to
+  be universal and asked whether the agent could KNOW if legible commits
+  was already set up. It can, via the heading; now the kit says so.
+
 ## v6 — day-one board seeding
 
 - APO.md §5: on a fresh seat the board is SEEDED, not conjured. First
