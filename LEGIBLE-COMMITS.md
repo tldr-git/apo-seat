@@ -65,14 +65,19 @@ commit: the whole point of the line is that a reader can find the person.
 Same for the agent identifier: name the model actually running (Codex
 sessions show it under `/model`; Claude Code under `/status`).
 
-### Where the commits go (local until you say otherwise)
+### Where the commits go: a private remote, and pushed is the standard
 
-Nothing here creates a GitHub repository or pushes. Commits land in the
-local `.git` on your machine; they leave it only when someone adds a
-remote and pushes. When that moment comes, the visibility is YOUR choice
-at creation time, not a default the kit sets: create the repository as
-private unless you mean to publish (`gh repo create <name> --private
---source . --push`, or select Private on GitHub's new-repository form
-before clicking create). An agent asked to "put this on GitHub" must
-create it private unless told otherwise, and say which it did.
+A decision log that lives only on one laptop is half a log: it does not
+survive the machine, and no one else's agent can read it. So the standard
+is a PRIVATE GitHub remote from day one, and **a change counts as recorded
+only once it is committed AND pushed.** Agents push after every commit;
+"committed but not pushed" is an unfinished step, and a checkpoint that
+says "done" while unpushed is false.
+
+Setup, once: `gh repo create <name> --private --source . --push` (or
+create it on GitHub's form with Private selected, then add the remote).
+Private is the default; public only when publishing is the intent, and an
+agent asked to "put this on GitHub" creates it private and says so. What
+this buys: backup, collaborators on other machines reading the same log,
+and seats on other machines sharing the same memory files and mailbox.
 

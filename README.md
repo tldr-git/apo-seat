@@ -29,6 +29,12 @@ into `CLAUDE.md` first. No guessing from git history.
    Updates later are just `git -C ~/apo-seat pull` — and your APO checks
    for them itself on boot (see APO.md §6).
 
+0b. **A private GitHub remote, from day one.** The decision log is only
+   useful if it outlives the laptop and other people's agents can read
+   it. In the repo: `gh repo create <name> --private --source . --push`
+   (Private is the standard; public only if you mean to publish). From
+   here on, committed means pushed; see LEGIBLE-COMMITS.md.
+
 1. **Copy the seat into your repo:**
    ```
    your-repo/
@@ -130,7 +136,8 @@ in, adds the CLAUDE.md block, and does the first run.
 > README names) and the memory line with the clone's newest tag; before
 > your first commit, establish my GitHub handle for the Collaborators line
 > (git config, the remote, or gh; if none answers, ask me once and record
-> it in apo-memory.md). Then
+> it in apo-memory.md); if this repo has no remote, create a PRIVATE one
+> on GitHub with gh and push after every commit from now on. Then
 > do the first run exactly as the README says: read apo/APO.md and
 > apo/apo-memory.md, record your own stable session id in apo/agents.md,
 > scan this repo for what's in flight, ask me what you need to know to

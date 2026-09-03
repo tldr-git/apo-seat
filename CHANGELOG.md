@@ -1,5 +1,18 @@
 # Changelog
 
+## v16 — a private remote from day one; committed means pushed
+
+- LEGIBLE-COMMITS.md, README, CODEX.md, both one-paste installs: the
+  standard is a PRIVATE GitHub remote created at setup (`gh repo create
+  --private --source . --push`) and a push after every commit; a change
+  counts as recorded only once pushed, and a "done" checkpoint on
+  unpushed work is false. Public only when publishing is the intent.
+- Why: Tim, 2026-09-03: "are we encouraging commits to be made to github
+  via apo and legible commits, so it will be backed up and collaborative
+  there?" We were not; now we are, and the reason is written down: a log
+  that lives on one laptop does not survive it and no one else's agent
+  can read it.
+
 ## v15 — commits are local; a remote is private unless told otherwise
 
 - LEGIBLE-COMMITS.md: "Where the commits go." The kit never creates a

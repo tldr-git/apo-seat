@@ -49,7 +49,10 @@ checkpoint cadence, the memory ritual, model per seat) applies as written.
    record the handle in `apo/apo-memory.md`. Then commit the seat files and `AGENTS.md` by explicit
    path, in the legible-commit format (what changed and why: "install the
    APO seat from kit <tag>"). The seat's own installation is the first
-   entry in the decision log; an uncommitted seat is not installed.
+   entry in the decision log; an uncommitted seat is not installed. If the
+   repo has no remote, create a PRIVATE one (`gh repo create <name>
+   --private --source . --push`) and push after every commit from now on;
+   committed means pushed (LEGIBLE-COMMITS.md, "Where the commits go").
 7. **Say which model you are.** The first reply after setup names the
    model and reasoning effort the terminal is running (Codex shows it in
    `/model`), so the Principal can see the APO/builder split is real.
@@ -139,7 +142,9 @@ the Codex app and start a thread (strongest model, high effort), and paste:
 > the Collaborators line (git config, the remote, or gh; if none answers,
 > ask me once and record it in apo/apo-memory.md). Then commit the
 > installation by explicit path in the legible-commit format (git init
-> first if this is not a repository).
+> first if this is not a repository); if there is no remote, create a
+> PRIVATE one on GitHub with gh and push, and push after every commit
+> from now on.
 > Then do the first run as CODEX.md says: read the seat
 > files, scan this repo for what's in flight, ask me what you need to
 > seed the Today's Builds board, write apo/today.html and tell me how to
