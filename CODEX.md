@@ -43,7 +43,10 @@ checkpoint cadence, the memory ritual, model per seat) applies as written.
 5. Legible commits: same prerequisite as the README; the heading check
    works on `AGENTS.md` instead of `CLAUDE.md`.
 6. **Commit the installation.** If the folder is not a git repository yet,
-   `git init` first. Then commit the seat files and `AGENTS.md` by explicit
+   `git init` first. Before that first commit, establish who the human is
+   for the `Collaborators:` line (LEGIBLE-COMMITS.md, "Who the human is"):
+   git config, the GitHub remote, or `gh`; if none answers, ask once and
+   record the handle in `apo/apo-memory.md`. Then commit the seat files and `AGENTS.md` by explicit
    path, in the legible-commit format (what changed and why: "install the
    APO seat from kit <tag>"). The seat's own installation is the first
    entry in the decision log; an uncommitted seat is not installed.
@@ -110,8 +113,11 @@ Open a terminal in your repo, start `codex`, and paste:
 > comments are institutional memory", copy APO.md and CODEX.md into apo/,
 > create apo/apo-memory.md with the kit-source line and the clone's newest
 > tag, create apo/agents.md and apo/inbox/APO.md, add the "APO seat" block
-> to AGENTS.md, and commit the installation by explicit path in the
-> legible-commit format (git init first if this is not a repository).
+> to AGENTS.md. Before your first commit, establish my GitHub handle for
+> the Collaborators line (git config, the remote, or gh; if none answers,
+> ask me once and record it in apo/apo-memory.md). Then commit the
+> installation by explicit path in the legible-commit format (git init
+> first if this is not a repository).
 > Then do the first run as CODEX.md says: read the seat
 > files, scan this repo for what's in flight, ask me what you need to
 > seed the Today's Builds board, write apo/today.html and tell me how to

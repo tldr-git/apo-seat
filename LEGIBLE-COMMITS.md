@@ -29,7 +29,7 @@ and the alternatives that were rejected.
 
 Collaborators: @<human's handle> + <agent identifier>
 source: session <short-id> @ <ISO-8601 timestamp>
-Co-Authored-By: <agent model> <noreply@anthropic.com>
+Co-Authored-By: <agent model> <the agent vendor's noreply address>
 
 The `source:` line is the PROVENANCE POINTER — it ties every output
 back to the conversation that produced it. A confusing result months
@@ -50,3 +50,18 @@ paths on the commit itself bypasses the shared staging area entirely.
 
 That's the whole prerequisite. The APO enforces these on every builder
 it launches.
+
+### Who the human is (establish once, never guess)
+
+The `Collaborators:` line names a real person by handle, so the agent must
+KNOW the handle before its first commit. Resolve it in this order, and
+stop at the first hit: the repo's `git config user.name` / `user.email`;
+the GitHub remote's owner (`git remote -v`); `gh api user --jq .login` if
+the GitHub CLI is signed in. If none of those answers, ASK the human once
+("what GitHub handle should commits credit you as?") and record the
+answer in the seat memory file so it is never asked again. A commit that
+credits `@<human's handle>` literally, or a guessed name, is a broken
+commit: the whole point of the line is that a reader can find the person.
+Same for the agent identifier: name the model actually running (Codex
+sessions show it under `/model`; Claude Code under `/status`).
+

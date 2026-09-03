@@ -63,6 +63,9 @@ into `CLAUDE.md` first. No guessing from git history.
    the board seeded from your answers, and starts its memory file. On
    day one the review rail is empty and says so; it fills as builders
    report and you give the APO work. Done.
+   Before the first commit the APO establishes who you are for the
+   `Collaborators:` line (git config, the GitHub remote, or `gh`; if none
+   answers, it asks you once and records your handle in apo-memory.md).
    (Add one line to apo/apo-memory.md so self-update works, filling in
    the newest tag of the clone, which `git -C ~/apo-seat describe --tags`
    prints: `kit source: https://github.com/tldr-git/apo-seat.git ·
@@ -123,7 +126,10 @@ in, adds the CLAUDE.md block, and does the first run.
 > follow its README.md setup steps in this repo, including the
 > prerequisite check (install legible commits from the kit's
 > LEGIBLE-COMMITS.md only if this repo's CLAUDE.md lacks the heading the
-> README names) and the memory line with the clone's newest tag. Then
+> README names) and the memory line with the clone's newest tag; before
+> your first commit, establish my GitHub handle for the Collaborators line
+> (git config, the remote, or gh; if none answers, ask me once and record
+> it in apo-memory.md). Then
 > do the first run exactly as the README says: read apo/APO.md and
 > apo/apo-memory.md, record your own stable session id in apo/agents.md,
 > scan this repo for what's in flight, ask me what you need to know to

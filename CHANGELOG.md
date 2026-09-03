@@ -1,5 +1,19 @@
 # Changelog
 
+## v12 — the human's handle is established, never guessed
+
+- LEGIBLE-COMMITS.md: new "Who the human is" section. The `Collaborators:`
+  line needs a real handle, so the agent resolves it (git config, the
+  GitHub remote, `gh api user`) and, failing all three, asks ONCE and
+  records it in the seat memory. A commit with a placeholder or a guessed
+  name is a broken commit. The agent identifier is the model actually
+  running. The Co-Authored-By address is now vendor-neutral.
+- README + CODEX.md install steps and both one-paste installs carry the
+  step before the first commit.
+- Why: Tim, 2026-09-03, testing on Codex: "I wasn't asked for my github
+  name by codex, so wondering how it could be following legible commits
+  protocol." It couldn't; the protocol assumed the handle was known.
+
 ## v11 — first live Codex run: commit the install, name the model
 
 - CODEX.md: two gaps from the first real run (Tim, 2026-09-03, a fresh
