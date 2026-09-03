@@ -229,6 +229,13 @@ can open any time:
   changed. Never overwrite a customization silently — list conflicts
   as the Principal's call. Improvements you make that would help
   every seat: propose them upstream as a pull request.
+  The self-update covers the legible-commits block too: compare the
+  kit's LEGIBLE-COMMITS.md to the block in the Principal's CLAUDE.md or
+  AGENTS.md; if the kit's is newer, PROPOSE the replacement (it is their
+  file, so show the diff and apply on their yes), and say what changed
+  in one line. If no kit clone exists (an install from a zip or a diff),
+  clone it first: `git clone https://github.com/tldr-git/apo-seat.git
+  ~/apo-seat`, then run the update; record the version.
 - Rules the Principal gives you about HOW to work belong in
   apo-memory.md immediately, and — when they're durable — proposed as
   edits to this file itself. The seat improves; the improvements are

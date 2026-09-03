@@ -144,6 +144,20 @@ in, adds the CLAUDE.md block, and does the first run.
 > seed the Today's Builds board, publish it, tell me what I now have and
 > how you'll work with me, and name the model you are running.
 
+## Updating a seat someone already has
+
+Paste this into their APO chat (works whether or not they have the kit
+clone; it is what the seat does on every boot from v5 on):
+
+> Update the APO seat: clone https://github.com/tldr-git/apo-seat.git to
+> ~/apo-seat if it is not there, else pull it. Diff the kit's APO.md and
+> CODEX.md against apo/, apply what does not conflict with my
+> customizations and list any conflicts for me. Compare the kit's
+> LEGIBLE-COMMITS.md to the block in my CLAUDE.md or AGENTS.md and show me
+> the diff before applying. Record the new version in apo/apo-memory.md
+> and tell me in a few lines what changed and what, if anything, I now
+> need to do.
+
 ## Day one — how you use it
 
 - **Give it work, not tasks:** "here's what I want to exist" — the APO

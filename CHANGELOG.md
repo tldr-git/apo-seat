@@ -1,5 +1,19 @@
 # Changelog
 
+## v17 — updates reach the legible-commits block too; one update paste
+
+- APO.md §6: the boot self-update also compares the kit's
+  LEGIBLE-COMMITS.md to the block in the Principal's CLAUDE.md or
+  AGENTS.md and proposes the replacement (their file: show the diff,
+  apply on yes). Seats installed from a zip or a diff, with no kit clone,
+  clone it first.
+- README: "Updating a seat someone already has," one paste that works
+  either way.
+- Why: Tim, 2026-09-03: "will other friends get this in their legible
+  commits and/or APO packages somehow? or do I need to tell each of them
+  to update?" The APO seat self-updated from v5; the commit block pasted
+  into CLAUDE.md never did, and pre-v5 installs had no clone to pull.
+
 ## v16 — a private remote from day one; committed means pushed
 
 - LEGIBLE-COMMITS.md, README, CODEX.md, both one-paste installs: the
