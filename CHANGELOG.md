@@ -1,5 +1,16 @@
 # Changelog
 
+## v10 — model per seat on Codex, with the flags
+
+- CODEX.md: each Codex terminal is its own session with its own model and
+  reasoning effort (`codex --model … -c model_reasoning_effort="high"`,
+  or profile files `$CODEX_HOME/apo.config.toml` / `builder.config.toml`
+  with `--profile`, or `/model` mid-session), so the APO/builder model split
+  works exactly as on Claude Code. First-run and kickoff pastes now name the
+  profile to start with. Verified against the Codex config reference.
+- Why: Tim, 2026-09-03: "do you know if these are different chats that can
+  use different model strengths?"
+
 ## v9 — the seat on Codex
 
 - New `CODEX.md`: the seat for people running OpenAI Codex instead of

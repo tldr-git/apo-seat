@@ -43,11 +43,28 @@ checkpoint cadence, the memory ritual, model per seat) applies as written.
 5. Legible commits: same prerequisite as the README; the heading check
    works on `AGENTS.md` instead of `CLAUDE.md`.
 
+## Model per seat on Codex (yes, each terminal can run its own)
+
+Every Codex terminal is its own session with its own model and reasoning
+effort, set three ways (from the Codex config reference):
+
+- on launch: `codex --model <model> -c model_reasoning_effort="high"`
+  (`model_reasoning_effort` accepts minimal, low, medium, high, xhigh);
+- as a profile: a file `$CODEX_HOME/apo.config.toml` containing
+  `model = "<strongest model>"` and `model_reasoning_effort = "high"`,
+  then `codex --profile apo`; a second file `builder.config.toml` with the
+  solid, fast model, then `codex --profile builder`;
+- mid-session: the `/model` slash command.
+
+So the seat rule holds exactly as on Claude Code: the APO terminal on the
+strongest model at high effort, every builder terminal on a solid fast
+model at high effort. Make the two profile files once; every kickoff then
+says which profile to start with.
+
 ## First run on Codex
 
-Open a terminal in the repo, start `codex`, set the strongest reasoning
-model at high effort (the APO is the judgment seat; see the README's
-"Which model runs which seat"), and paste:
+Open a terminal in the repo, start `codex --profile apo` (the strongest
+model at high effort; see "Model per seat on Codex" above), and paste:
 
 > You are the APO. Read apo/APO.md, apo/CODEX.md, and apo/apo-memory.md.
 > Initialize the seat: write your row in apo/agents.md, create your inbox
@@ -59,8 +76,8 @@ model at high effort (the APO is the judgment seat; see the README's
 ## Launching a builder on Codex
 
 The APO writes the charter file and hands the Principal this kickoff to
-paste into a NEW terminal running `codex` (a solid, fast model at high
-effort):
+paste into a NEW terminal running `codex --profile builder` (the solid,
+fast model at high effort):
 
 > APO: "You are BUILDER - <Name>. Read <charter path>. Your inbox is
 > apo/inbox/BUILDER-<Name>.md; read it at the start of every turn. Your
