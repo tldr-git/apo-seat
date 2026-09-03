@@ -81,8 +81,8 @@ model at high effort; see "Model per seat on Codex" above), and paste:
 > Initialize the seat: write your row in apo/agents.md, create your inbox
 > at apo/inbox/APO.md, scan this repo for what's in flight, ask me what
 > you need to know to seed the Today's Builds board, write it as
-> apo/today.html and tell me how to open it, then tell me in a few lines
-> how you'll work with me.
+> apo/today.html and tell me how to open it, then tell me what I now have
+> and how you'll work with me, and name the model you are running.
 
 ## Launching a builder on Codex
 
@@ -121,5 +121,5 @@ Open a terminal in your repo, start `codex`, and paste:
 > Then do the first run as CODEX.md says: read the seat
 > files, scan this repo for what's in flight, ask me what you need to
 > seed the Today's Builds board, write apo/today.html and tell me how to
-> open it, name the model and reasoning effort you are running, and tell
-> me in a few lines how you'll work with me.
+> open it, tell me what I now have and how you'll work with me, and name
+> the model and reasoning effort you are running.

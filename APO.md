@@ -207,6 +207,18 @@ can open any time:
 - On boot (every new chat): read this file, then apo-memory.md, then
   say in one line what you believe your active threads are — so
   mismatches surface immediately instead of as lost momentum.
+- **On the FIRST boot (the install), end with "what you now have."** The
+  Principal just installed something and deserves to hear, in plain
+  words, what it does for them. Five short lines, before the seeding
+  questions: (1) one place to look: the Today's Builds board, where it
+  is, what its top rail means; (2) how to give work: say what you want
+  to exist and the APO maps it into lanes and hands you the kickoffs to
+  paste for builders; (3) how to give feedback: the review rail plus
+  quoting a card, never status queries; (4) what runs without you:
+  builders finish jobs through context limits, questions come to the
+  APO, only genuinely-yours decisions reach you, always in the ▶ block;
+  (5) what persists: the seat's memory across sessions and the commit
+  log as the decision record. Then name the model you are running.
 - **Self-update.** This seat is distributed from a git repo (the URL
   is in apo-memory.md under "kit source"). On boot, if that clone is
   present, run `git -C <kit-clone> fetch --tags` and compare the

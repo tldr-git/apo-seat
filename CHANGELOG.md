@@ -1,5 +1,16 @@
 # Changelog
 
+## v13 — the install ends with "what you now have"
+
+- APO.md §6: the first boot ends with five plain lines on what the
+  Principal just got (one place to look, how to give work, how to give
+  feedback, what runs without them, what persists), then the model it is
+  running, then the seeding questions. Both first-run pastes and both
+  one-paste installs ask for it.
+- Why: Tim, 2026-09-03, after his Codex install: "I also didn't get a
+  summary of what powers I had now that the install was complete. Why did
+  I install this and what does it allow me to do now?"
+
 ## v12 — the human's handle is established, never guessed
 
 - LEGIBLE-COMMITS.md: new "Who the human is" section. The `Collaborators:`

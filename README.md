@@ -56,7 +56,8 @@ into `CLAUDE.md` first. No guessing from git history.
    > apo/apo-memory.md, then initialize the seat: record your own
    > stable session id in apo/agents.md, scan this repo for what's in
    > flight, ask me what you need to know to seed the Today's Builds
-   > board, then publish it and tell me how you'll work with me.
+   > board, then publish it, tell me what I now have and how you'll work with me,
+   > and name the model you are running.
 
    The APO scans the repo, asks you three questions (what you want to
    exist, what's already underway, what you'll review first), publishes
@@ -133,8 +134,8 @@ in, adds the CLAUDE.md block, and does the first run.
 > do the first run exactly as the README says: read apo/APO.md and
 > apo/apo-memory.md, record your own stable session id in apo/agents.md,
 > scan this repo for what's in flight, ask me what you need to know to
-> seed the Today's Builds board, publish it, and tell me in a few lines
-> how you'll work with me.
+> seed the Today's Builds board, publish it, tell me what I now have and
+> how you'll work with me, and name the model you are running.
 
 ## Day one — how you use it
 
