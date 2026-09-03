@@ -81,3 +81,17 @@ agent asked to "put this on GitHub" creates it private and says so. What
 this buys: backup, collaborators on other machines reading the same log,
 and seats on other machines sharing the same memory files and mailbox.
 
+### Updating this block (no APO seat needed)
+
+This protocol is a paste into your CLAUDE.md or AGENTS.md, so it does not
+update itself. To refresh it, paste into any chat in the repo:
+
+> Refresh my legible-commits block: fetch
+> https://raw.githubusercontent.com/tldr-git/legible-commits/master/README.md,
+> compare it to the block under "Commits & comments are institutional
+> memory" in my CLAUDE.md (or AGENTS.md), show me the diff, and apply it on
+> my yes. Then tell me in one line what changed and what, if anything, I
+> now need to do.
+
+If you later install the APO seat, its boot update does this for you.
+

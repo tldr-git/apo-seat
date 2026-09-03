@@ -1,5 +1,14 @@
 # Changelog
 
+## v18 — an update paste for legible-commits-only installs
+
+- LEGIBLE-COMMITS.md: "Updating this block (no APO seat needed)," a
+  paste that refreshes the CLAUDE.md/AGENTS.md block straight from the
+  legible-commits repo. The APO update paste assumes an apo/ folder and
+  was the wrong instruction for people who only have the commit protocol.
+- Why: Tim, 2026-09-03: "they should do the paste that says 'update the
+  APO seat' even though they don't have an APO yet?"
+
 ## v17 — updates reach the legible-commits block too; one update paste
 
 - APO.md §6: the boot self-update also compares the kit's
