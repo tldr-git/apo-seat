@@ -54,7 +54,26 @@ checkpoint cadence, the memory ritual, model per seat) applies as written.
    model and reasoning effort the terminal is running (Codex shows it in
    `/model`), so the Principal can see the APO/builder split is real.
 
-## Model per seat on Codex (yes, each terminal can run its own)
+## Terminal or app: both work, and "terminal" below means either
+
+Codex runs as a command-line tool and as a desktop app. The seat is the
+same in both; only the mechanics of starting a seat differ:
+
+| | Codex CLI (terminal) | Codex app |
+|---|---|---|
+| a seat | one terminal running `codex` in the repo | one chat thread on the project folder |
+| several seats at once | several terminals | several threads; they run in parallel |
+| model + reasoning effort | `--model` / `-c model_reasoning_effort` / `--profile`, or `/model` | the model picker next to the composer, set per thread BEFORE the first message |
+| the board | `open apo/today.html` | click the file path the APO gives, or open it from Finder; it is a plain file in the project folder |
+| AGENTS.md | read on start | read on start |
+| profiles (`$CODEX_HOME/*.config.toml`) | yes | not exposed; use the picker |
+
+So for the app: open the project folder, start a thread, pick the
+strongest model at high effort in the picker, paste the APO kickoff. Each
+builder is a new thread on the same folder with the solid, fast model
+picked first. The file mailbox and everything else is identical.
+
+## Model per seat on Codex (yes, each terminal or thread can run its own)
 
 Every Codex terminal is its own session with its own model and reasoning
 effort, set three ways (from the Codex config reference):
@@ -67,15 +86,17 @@ effort, set three ways (from the Codex config reference):
   solid, fast model, then `codex --profile builder`;
 - mid-session: the `/model` slash command.
 
-So the seat rule holds exactly as on Claude Code: the APO terminal on the
-strongest model at high effort, every builder terminal on a solid fast
-model at high effort. Make the two profile files once; every kickoff then
-says which profile to start with.
+So the seat rule holds exactly as on Claude Code: the APO terminal or
+thread on the strongest model at high effort, every builder on a solid
+fast model at high effort. On the CLI make the two profile files once;
+in the app it is the picker, set before the first message of each thread.
+Every kickoff says which to use.
 
 ## First run on Codex
 
-Open a terminal in the repo, start `codex --profile apo` (the strongest
-model at high effort; see "Model per seat on Codex" above), and paste:
+Open a terminal in the repo and start `codex --profile apo`, or in the
+app open the project folder, start a thread, and pick the strongest model
+at high effort (see "Model per seat on Codex" above). Then paste:
 
 > You are the APO. Read apo/APO.md, apo/CODEX.md, and apo/apo-memory.md.
 > Initialize the seat: write your row in apo/agents.md, create your inbox
@@ -87,8 +108,8 @@ model at high effort; see "Model per seat on Codex" above), and paste:
 ## Launching a builder on Codex
 
 The APO writes the charter file and hands the Principal this kickoff to
-paste into a NEW terminal running `codex --profile builder` (the solid,
-fast model at high effort):
+paste into a NEW terminal running `codex --profile builder`, or a NEW app
+thread on the same folder with the solid, fast model picked (high effort):
 
 > APO: "You are BUILDER - <Name>. Read <charter path>. Your inbox is
 > apo/inbox/BUILDER-<Name>.md; read it at the start of every turn. Your
@@ -104,7 +125,8 @@ in progress.
 
 ## The one-paste install (an agent does every step above)
 
-Open a terminal in your repo, start `codex`, and paste:
+Open a terminal in your repo and start `codex`, or open the folder in
+the Codex app and start a thread (strongest model, high effort), and paste:
 
 > You are setting up the APO seat on Codex. Clone
 > https://github.com/tldr-git/apo-seat.git to ~/apo-seat and follow

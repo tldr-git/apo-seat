@@ -1,5 +1,16 @@
 # Changelog
 
+## v14 — Codex app, not only the CLI
+
+- CODEX.md: a terminal-vs-app table. In the app a seat is a chat thread on
+  the project folder, threads run in parallel, the model and reasoning
+  effort are picked per thread in the composer's picker before the first
+  message (profiles are CLI-only), and the board is a plain file opened
+  from the path the APO gives or from Finder. First-run, builder kickoff,
+  and one-paste wording cover both.
+- Why: Tim, 2026-09-03: "I'm not in the terminal, I'm in the Codex app
+  interface."
+
 ## v13 — the install ends with "what you now have"
 
 - APO.md §6: the first boot ends with five plain lines on what the
