@@ -65,3 +65,14 @@ commit: the whole point of the line is that a reader can find the person.
 Same for the agent identifier: name the model actually running (Codex
 sessions show it under `/model`; Claude Code under `/status`).
 
+### Where the commits go (local until you say otherwise)
+
+Nothing here creates a GitHub repository or pushes. Commits land in the
+local `.git` on your machine; they leave it only when someone adds a
+remote and pushes. When that moment comes, the visibility is YOUR choice
+at creation time, not a default the kit sets: create the repository as
+private unless you mean to publish (`gh repo create <name> --private
+--source . --push`, or select Private on GitHub's new-repository form
+before clicking create). An agent asked to "put this on GitHub" must
+create it private unless told otherwise, and say which it did.
+

@@ -1,5 +1,16 @@
 # Changelog
 
+## v15 — commits are local; a remote is private unless told otherwise
+
+- LEGIBLE-COMMITS.md: "Where the commits go." The kit never creates a
+  GitHub repository or pushes; commits stay in the local .git until
+  someone adds a remote. When they do, create it private unless publishing
+  is the intent (`gh repo create --private`, or Private on the web form);
+  an agent asked to "put this on GitHub" defaults to private and says so.
+- Why: Tim, 2026-09-03: "do you know if github commits are to a private
+  repo by default, when set up via our APO kit?" The honest answer was
+  "the kit doesn't decide," which is a gap.
+
 ## v14 — Codex app, not only the CLI
 
 - CODEX.md: a terminal-vs-app table. In the app a seat is a chat thread on
