@@ -103,6 +103,13 @@ Names go stale; the rule does not: the newest, strongest model on
 the APO, a solid fast one on builders, both at high effort. Revisit
 when a new generation ships.
 
+## Using Codex instead of Claude Code?
+
+Read `CODEX.md`: same seat, same files, with the plumbing swapped
+(`AGENTS.md` for `CLAUDE.md`, a file mailbox for session messaging, a
+local `apo/today.html` for the published board). It has its own one-paste
+install.
+
 ## The one-paste install (an agent does every step above)
 
 If you'd rather not do the setup by hand: open a terminal in your repo,

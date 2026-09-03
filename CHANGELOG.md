@@ -1,5 +1,20 @@
 # Changelog
 
+## v9 — the seat on Codex
+
+- New `CODEX.md`: the seat for people running OpenAI Codex instead of
+  Claude Code. Same `APO.md`, same rules; a substitution table for the
+  plumbing: `AGENTS.md` in place of `CLAUDE.md`; a file mailbox
+  (`apo/inbox/<seat>.md`, append-only, committed by itself) in place of
+  session ids and messaging; a local `apo/today.html` opened from disk
+  in place of the published board, with chat quotes as the comment
+  channel; no settable session titles, so names live in `apo/agents.md`.
+  Its own first-run paste, builder kickoff, and one-paste install.
+- README points at it.
+- Why: Tim, 2026-09-02: "an APO handoff for someone who is getting
+  started on their first project, but they are using Codex not Claude
+  Code."
+
 ## v8 — model per seat
 
 - README: new section "Which model runs which seat": the newest,
