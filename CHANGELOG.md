@@ -1,5 +1,20 @@
 # Changelog
 
+## v11 — first live Codex run: commit the install, name the model
+
+- CODEX.md: two gaps from the first real run (Tim, 2026-09-03, a fresh
+  folder with no commits). (1) The seat installed itself but left it
+  uncommitted "because the repository began with no commits": now the
+  install does `git init` if needed and commits the seat files by explicit
+  path as the first legible commit; an uncommitted seat is not installed.
+  (2) The first reply now names the model and reasoning effort the
+  terminal runs, so the Principal can see the APO/builder split is real.
+  The one-paste install carries both.
+- Everything else in that run was the kit behaving as designed: legible
+  commits installed because AGENTS.md was absent, no lanes invented, the
+  one draft found was labeled unconfirmed, the board written, the three
+  seeding questions asked.
+
 ## v10 — model per seat on Codex, with the flags
 
 - CODEX.md: each Codex terminal is its own session with its own model and

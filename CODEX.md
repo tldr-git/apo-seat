@@ -42,6 +42,14 @@ checkpoint cadence, the memory ritual, model per seat) applies as written.
 4. Copy this file too: `cp ~/apo-seat/CODEX.md your-repo/apo/CODEX.md`.
 5. Legible commits: same prerequisite as the README; the heading check
    works on `AGENTS.md` instead of `CLAUDE.md`.
+6. **Commit the installation.** If the folder is not a git repository yet,
+   `git init` first. Then commit the seat files and `AGENTS.md` by explicit
+   path, in the legible-commit format (what changed and why: "install the
+   APO seat from kit <tag>"). The seat's own installation is the first
+   entry in the decision log; an uncommitted seat is not installed.
+7. **Say which model you are.** The first reply after setup names the
+   model and reasoning effort the terminal is running (Codex shows it in
+   `/model`), so the Principal can see the APO/builder split is real.
 
 ## Model per seat on Codex (yes, each terminal can run its own)
 
@@ -102,7 +110,10 @@ Open a terminal in your repo, start `codex`, and paste:
 > comments are institutional memory", copy APO.md and CODEX.md into apo/,
 > create apo/apo-memory.md with the kit-source line and the clone's newest
 > tag, create apo/agents.md and apo/inbox/APO.md, add the "APO seat" block
-> to AGENTS.md. Then do the first run as CODEX.md says: read the seat
+> to AGENTS.md, and commit the installation by explicit path in the
+> legible-commit format (git init first if this is not a repository).
+> Then do the first run as CODEX.md says: read the seat
 > files, scan this repo for what's in flight, ask me what you need to
 > seed the Today's Builds board, write apo/today.html and tell me how to
-> open it, and tell me in a few lines how you'll work with me.
+> open it, name the model and reasoning effort you are running, and tell
+> me in a few lines how you'll work with me.
